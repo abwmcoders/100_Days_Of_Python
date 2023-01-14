@@ -19,19 +19,22 @@ for i in range(1,hw_letters + 1):
     rand_index = random.randrange(len(lettters))
     i = lettters[rand_index]
     random_letters.append(i)
+random.shuffle(random_letters)    
 password = ''.join(random_letters)    
-print(f'This is letters {password}')    
+print(f'This is generated letters {password}')    
 for i in range(1,hw_digits + 1):
     rand_index = random.randrange(len(numbers))
     i = numbers[rand_index]
     random_letters.append(i)
+random.shuffle(random_letters)
 password = ''.join(random_letters)   
-print(f'This is numbers {password}')   
+print(f'This is generated numbers {password}')   
 for i in range(1,hw_symbols + 1):
     rand_index = random.randrange(len(symbols))
     i = symbols[rand_index]
     random_letters.append(i)
 random.shuffle(random_letters)    
 password = ''.join(random_letters)
-print(f'Your password is {password}')      
+print(f'This is generated symbols {password}')
+print(f'Your password is {password}')   
 
