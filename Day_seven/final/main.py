@@ -1,6 +1,6 @@
 # Step 5
 
-from hangmanartman import logo
+from hangmanartman import logo, stages
 import random
 
 # TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
@@ -57,5 +57,4 @@ while not end_of_game:
         print("You win.")
 
     # TODO-2: - Import the stages from hangman_art.py and make this error go away.
-    from hangman_art import stages
     print(stages[lives])
